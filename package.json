@@ -1,7 +1,6 @@
 {
-  "name": "bare-react",
+  "name": "clothes-for-us-react",
   "version": "1.0.0",
-  "description": "simple lightweight react boilerplate",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
