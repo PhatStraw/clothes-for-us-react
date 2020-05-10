@@ -4,8 +4,9 @@ import Sender from './pages/senderSignUp.js'
 import Receiver from './pages/receiverSignUp.js'
 import NotFound from './pages/notFound.js'
 import About from './pages/about.js'
+import Nav from './components/nav'
 import { hot } from 'react-hot-loader/root'
-import { ThemeProvider } from 'theme-ui'
+import { ThemeProvider, MenuButton } from 'theme-ui'
 import theme from './theme'
 import {
   BrowserRouter as Router,
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Router>
+        <Nav />
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/sender' component={Sender} />

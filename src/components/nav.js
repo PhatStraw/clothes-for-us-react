@@ -6,7 +6,15 @@ const Nav = () => {
   return(
     <Flex 
         as="nav" 
-        sx={{width: '100%'}}
+        sx={{
+          width: '100%', 
+          position: 'fixed', 
+          overflow: 'hidden', 
+          top: '0',
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'spa'
+        }}
       >
         <Link to='/' style={{margin: '10px'}}>Home</Link>
         <Link to='/receiver' style={{margin: '10px'}}>SIGN UP FOR SUPPORT</Link>
