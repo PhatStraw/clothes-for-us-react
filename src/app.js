@@ -3,6 +3,7 @@ import Home from './pages/home.js'
 import Sender from './pages/senderSignUp.js'
 import Receiver from './pages/receiverSignUp.js'
 import NotFound from './pages/notFound.js'
+import About from './pages/about.js'
 import { hot } from 'react-hot-loader/root'
 import { ThemeProvider } from 'theme-ui'
 import theme from './theme'
@@ -20,6 +21,7 @@ const App = () => {
           <Route exact path='/' component={Home} />
           <Route exact path='/sender' component={Sender} />
           <Route exact path='/receiver' component={Receiver} />
+          <Route exact path='/about' component={About} />
           <Route component={NotFound} />
         </Switch>
       </Router>
