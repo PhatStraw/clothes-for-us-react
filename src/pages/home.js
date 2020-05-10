@@ -1,15 +1,8 @@
-import React, { useState } from 'react'
-import { Redirect } from 'react-router-dom'
-import { Box, Heading, Button } from 'theme-ui'
+import React from 'react'
+import { Box } from 'theme-ui'
+import Section from '../components/section'
 
 const Home = () => {
-  const [redirect, setRedirect] = useState()
-  const renderRedirect = () => {
-    if (redirect) {
-      return <Redirect to="/about" />
-    }
-  }
-
   return (
     <Box
       sx={{
@@ -26,11 +19,9 @@ const Home = () => {
           paddingTop: '34px',
         }}
       >
-        {renderRedirect()}
-        <Heading sx={{ textAlign: 'center' }}>Get To Know Us</Heading>
-        <Button sx={{ width: '50%' }} onClick={(e) => setRedirect(true)}>
-          About Us
-        </Button>
+        <Section heading={'Get To Know Us'} button={'About Us'} to={'/about'}/>
+        <Section heading={'Gain Support From Those Who Care'} button={'Learn More'} to={'/receiver/signup'}/>
+        <Section heading={'Donate What You Can'} button={'Donate'} to={'/donate'}/>
       </Box>
     </Box>
   )

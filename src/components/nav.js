@@ -11,7 +11,7 @@ const Nav = () => {
           position: 'fixed', 
           overflow: 'hidden', 
           top: '0',
-          display: 'flex',
+          display: ['none', 'none', 'none', 'flex'],
           flexDirection: 'row',
           justifyContent: 'spa'
         }}

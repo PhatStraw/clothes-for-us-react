@@ -9,4 +9,5 @@ export default {
     background: '#fff',
     primary: '#33e',
   },
+  sizes: [0, 415, 800, 1280]
 }

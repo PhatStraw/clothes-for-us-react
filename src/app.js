@@ -21,8 +21,8 @@ const App = () => {
         <Nav />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/sender' component={Sender} />
-          <Route exact path='/receiver' component={Receiver} />
+          <Route exact path='/sender/signup' component={Sender} />
+          <Route exact path='/receiver/signup' component={Receiver} />
           <Route exact path='/about' component={About} />
           <Route component={NotFound} />
         </Switch>
