@@ -8,12 +8,24 @@ const Receiver = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        height: '100vh',
+        flexDirection: 'column'
       }}
     >
+      
       <Box
         as='form'
         // onSubmit={e => e}
       >
+
+        <Label
+          sx={{
+            fontSize:'24px',
+            textAlign: 'center',
+            margin: '10px'
+          }}
+        >Get the help you deserve, today.</Label>
+
         <Label>First Name</Label>
           <Input 
             type='name'
