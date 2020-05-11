@@ -1,25 +1,39 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Flex } from 'theme-ui'
+import { Flex, Box, MenuButton } from 'theme-ui'
 
 const Nav = () => {
   return(
-    <Flex 
-        as="nav" 
+    <Box>
+      {/* <MenuButton 
+        aria-label='Toggle Menu'
         sx={{
-          width: '100%', 
-          position: 'fixed', 
-          overflow: 'hidden', 
-          top: '0',
-          display: ['none', 'none', 'none', 'flex'],
-          flexDirection: 'row',
-          justifyContent: 'spa'
+          '@media screen and (max-width: 1200px)': {
+              display: 'hidden'
+          }
         }}
-      >
-        <Link to='/' style={{margin: '10px'}}>Home</Link>
-        <Link to='/receiver' style={{margin: '10px'}}>SIGN UP FOR SUPPORT</Link>
-        <Link to='/sender' style={{margin: '10px'}}>DONATE</Link>
-    </Flex>
+        
+      /> */}
+      <Flex 
+          as="nav" 
+          sx={{
+            width: '100%', 
+            position: 'fixed', 
+            overflow: 'hidden', 
+            top: '0',
+            flexDirection: 'row',
+            display: 'visible',
+            // '@media screen and (max-width: 991px)': {
+            //   display: 'hidden'
+            // }
+          }}
+        >
+          <Link to='/' style={{margin: '10px'}}>Home</Link>
+          <Link to='/receiver' style={{margin: '10px'}}>SIGN UP FOR SUPPORT</Link>
+          <Link to='/sender' style={{margin: '10px'}}>DONATE</Link>
+      </Flex>
+    </Box>
+    
   )
 }
 

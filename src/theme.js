@@ -1,13 +1,24 @@
 export default {
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: '"Avenir Next", sans-serif',
-    monospace: 'Menlo, monospace',
+    body: 'Georgia, Cambria, "Times New Roman", Times, serif',
+    heading: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+  },
+  fontSizes: [12, 14, 16, 20, 24, 32, 48],
+    fontWeights: {
+    body: 400,
+    heading: 700,
+  },
+  lineHeights: {
+    body: 1.5,
+    heading: 1.125,
   },
   colors: {
-    text: '#000',
-    background: '#fff',
-    primary: '#33e',
+    text: '#392a25',
+    muted: '#aaaaaa',
+    background: '#f8f8f8',
+    foreground: '#ffffff',
+    primary: '#92b955',
+    secondary: '#9f8a6d',
   },
-  sizes: [0, 415, 800, 1280]
-}
+  space: [0, 4, 8, 16, 32, 48],
+};
