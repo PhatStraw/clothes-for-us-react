@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <Box
       sx={{
-        height: '100vh',
         width: '100vw',
       }}
     >
@@ -17,6 +16,10 @@ const Home = () => {
           alignItems: 'center',
           flexDirection: 'column',
           paddingTop: '34px',
+          '@media screen and (min-width: 42em)':{
+            display: 'flex',
+            flexDirection: 'row'
+          }
         }}
       >
         <Section heading={'Get To Know Us'} button={'About Us'} to={'/about'}/>
